@@ -1,0 +1,13 @@
+.error-indicator {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.error-indicator .error-title {
+  font-size: 1.7rem;
+}

@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react';
+import './Weather.css'
 
 
 const Weather = (props) =>  {
-
-
     return (
         <Fragment>
             <div className="m-auto col-8 text-center">
@@ -16,6 +15,6 @@ const Weather = (props) =>  {
             </div>
         </Fragment>
     );
-}
+};
 
 export default Weather;

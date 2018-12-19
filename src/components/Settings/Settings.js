@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
-import Form from './Form';
-import List from './List';
+import Form from '../Form/Form';
+import List from '../List/List';
 
 class Settings extends Component {
     render() {
         return (
-            <div>
+            <div className="settings">
+                <h2>Cities List</h2>
                 <Form/>
                 <List/>
             </div>

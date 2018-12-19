@@ -1,0 +1,17 @@
+
+.temperature, .icon {
+  font-size: 4rem;
+}
+
+
+@media (min-width: 576px) {
+  .temperature, .icon {
+    font-size: 5rem;
+  }
+
+  .weather-details {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+}
+

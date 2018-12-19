@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
 import moment from 'moment';
+import './Date.css';
+
 
 class Date extends Component {
     state = {
         now: moment()
-    }
+    };
 
     currentMoment = () => {
          this.setState({now: moment()});
-    }
+    };
 
     componentDidMount() {
         this.nowID = setInterval(this.currentMoment,1000)
-    }
+    };
 
     componentWillUnmount() {
         clearInterval(this.nowID);
-    }
+    };
 
     render() {
         let year = this.state.now.format('YYYY');
         let month = this.state.now.format('MMM');
         let day = this.state.now.format('DD');
-
         let hour = this.state.now.format('kk');
         let min = this.state.now.format('mm');
 

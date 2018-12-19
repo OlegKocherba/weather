@@ -1,0 +1,63 @@
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '~weather-icons-npm/css/weather-icons.min.css';
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+.App {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.full-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-flip {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.settings-on .card-flip .flip,
+.settings-on .card-flip.hover .flip {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card-flip,
+.front,
+.back {
+  width: 100%;
+  height: 480px;
+}
+
+.flip {
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}

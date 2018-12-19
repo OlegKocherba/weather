@@ -1,0 +1,14 @@
+.list-item {
+  align-items: center;
+}
+
+.list-item span:first-child {
+  width: 100%;
+  cursor: pointer;
+
+}
+
+.active-city{
+  font-weight: bold;
+  color: #83A4E6;
+}
